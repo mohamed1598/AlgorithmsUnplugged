@@ -13,6 +13,7 @@ namespace AlgorithmsUnplugged.Sort_Algorithms
         private static readonly ISort Merge = new MergeSort();
         private static readonly ISort Quick = new QuickSort();
         private static readonly ISort Bubble = new BubbleSort();
+        private static readonly ISort Selection = new SelectionSort();
         private static List<int> numbers ; 
         private static List<string> texts ;
         private static List<double> doubles ;
@@ -25,6 +26,8 @@ namespace AlgorithmsUnplugged.Sort_Algorithms
             TestCases(Quick);
             Console.WriteLine("Bubble Sort :");
             TestCases(Bubble);
+            Console.WriteLine("Selection Sort :");
+            TestCases(Selection);
         }
         private static void TestCases(ISort algorithm)
         {
